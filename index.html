@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+    <title>Dicionário</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">Dicionário :/</h1>
+
+    <div id="form">
+      <label for="input">Digite uma palavra</label>
+      <div class="wrapper-input">
+        <input
+          type="text"
+          tabindex="1"
+          id="input"
+          class="input"
+          placeholder="EX: palavra"
+        />
+        <button id="btnSearch" tabindex="2" class="btnSearch">
+          <i class="ri-search-2-line"></i>
+        </button>
+      </div>
+      <ul id="suggestions" class="suggestions"></ul>
+
+      <output id="output" class="output"></output>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
